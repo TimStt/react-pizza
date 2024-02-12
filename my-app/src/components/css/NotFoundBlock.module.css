@@ -1,0 +1,21 @@
+.root {
+  text-align: center;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.root .discr {
+  font-size: 20px;
+  margin-top: 20px;
+}
+@media (max-width: 1200px) {
+  .root {
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .root h1 {
+    font-size: 35px;
+  }
+}/*# sourceMappingURL=NotFoundBlock.module.css.map */

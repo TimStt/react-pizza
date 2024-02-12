@@ -1,0 +1,23 @@
+@import '../../scss/libs/adaptive';
+
+.root {
+  text-align: center;
+  height: calc(100vh / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 15px;
+  .discr {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  @include _1200 {
+    flex-direction: column;
+    justify-content: flex-end;
+
+    h1 {
+      font-size: 35px;
+    }
+  }
+}

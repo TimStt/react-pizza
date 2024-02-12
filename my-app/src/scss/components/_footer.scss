@@ -1,0 +1,93 @@
+@import '../variables';
+@import '../libs/adaptive';
+
+.footer {
+  background-color: $background-footer;
+  @include _600 {
+    .logo {
+      flex-direction: column;
+
+      @include flex-center;
+      h1 {
+        font-size: 19px;
+      }
+    }
+  }
+  @include _1015 {
+    .logo p {
+      display: none;
+    }
+  }
+
+  &__container {
+    width: 100% !important;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    justify-items: center;
+    align-items: start;
+    gap: 10px;
+    padding: 20px 0px;
+
+    @include _800 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 60px 14px;
+      padding: 24px 0px 40px;
+      .footer__contacts {
+        grid-column: 3 span;
+      }
+    }
+    @include _600 {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      text-align: center;
+      .footer__contacts {
+        grid-column: 1;
+      }
+    }
+  }
+  &__menu {
+    ul {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+    }
+  }
+  &__copyright {
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  label {
+    display: block;
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  .footer__contacts {
+    label {
+      text-transform: uppercase;
+      font-size: 17px;
+    }
+    &__messengers {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 13px 10px;
+
+      margin: 0 auto;
+      a {
+        @include flex-center;
+        justify-content: center;
+        border-radius: 13px;
+        padding: 5px 20px;
+        box-shadow: $box-shadow;
+      }
+      a:last-of-type {
+        grid-column: span 2;
+      }
+    }
+  }
+}

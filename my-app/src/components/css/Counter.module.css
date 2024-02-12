@@ -1,0 +1,10 @@
+.root {
+  gap: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+}
+.root button {
+  font-size: 20px;
+}/*# sourceMappingURL=Counter.module.css.map */

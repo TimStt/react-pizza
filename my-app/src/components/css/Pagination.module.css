@@ -1,0 +1,27 @@
+.root {
+  display: flex;
+  gap: 20px;
+  margin-top: 60px;
+  font-size: 19px;
+  font-weight: 600;
+  justify-content: center;
+}
+.root a {
+  display: flex;
+  cursor: pointer;
+  border: 1px solid #fe5f1e;
+  width: 40px;
+  border-radius: 50%;
+  transition: all 0.3s;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.root li:hover a {
+  color: #f5f0f0;
+  background-color: #fe5f1e;
+}
+.root :global .selected a {
+  color: #f5f0f0;
+  background-color: #fe5f1e;
+}/*# sourceMappingURL=Pagination.module.css.map */

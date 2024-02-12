@@ -1,0 +1,87 @@
+.search {
+  max-width: 320px;
+  width: 100%;
+}
+.search .form {
+  position: relative;
+}
+.search .form .logo {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+  max-width: 18px;
+}
+.search .form .inp {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  font-size: 17px;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px 60px 10px 40px;
+  background-color: rgb(246, 246, 241);
+}
+.search .form .inp[placeholder] {
+  text-overflow: ellipsis;
+}
+.search .form .inp::-moz-placeholder {
+  text-overflow: ellipsis;
+}
+.search .form .inp:-moz-placeholder {
+  text-overflow: ellipsis;
+}
+.search .form .inp:-ms-input-placeholder {
+  text-overflow: ellipsis;
+}
+.search .form .inp::-webkit-input-placeholder {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.search .form .inp::-moz-placeholder {
+  opacity: 1;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.search .form .inp:-moz-placeholder {
+  opacity: 1;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.search .form .inp:-ms-input-placeholder {
+  opacity: 1;
+  -ms-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.search .form .inp:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.search .form .inp:focus::-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.search .form .inp:focus:-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.search .form .inp:focus:-ms-input-placeholder {
+  opacity: 0;
+  -ms-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.search .form .inp[type=search]::-webkit-search-decoration, .search .form .inp[type=search]::-webkit-search-cancel-button, .search .form .inp[type=search]::-webkit-search-results-button, .search .form .inp[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+.search .form .clean {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  height: 13px;
+  width: 13px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}/*# sourceMappingURL=Search.module.css.map */

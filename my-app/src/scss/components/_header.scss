@@ -1,0 +1,40 @@
+@import '../variables.scss';
+
+.header {
+  border-bottom: 1px solid $gray-line;
+  padding: 40px 0;
+
+  .container {
+    @include flex-center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+}
+.logo {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+
+  h1 {
+    color: #181818;
+    font-size: 24px;
+    letter-spacing: 1%;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+
+  p {
+    color: #7b7b7b;
+  }
+  @include _710 {
+    h1 {
+      font-size: 20px;
+    }
+  }
+  @include _560 {
+    align-items: center;
+    p {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@import '../variables';
+@import '../libs/adaptive';
+
+.categories {
+  li {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 9px;
+
+    button {
+      background-color: #f9f9f9;
+      padding: 13px 30px;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.1s ease-in-out;
+      border: none;
+      @include noselect();
+      @include _1200 {
+        padding: 10px 20px;
+      }
+
+      &:hover {
+        background-color: darken(#f9f9f9, 2%);
+      }
+
+      &:active {
+        background-color: darken(#f9f9f9, 5%);
+      }
+
+      &.active {
+        background-color: #282828;
+        color: #fff;
+      }
+    }
+  }
+  @include _600 {
+    width: 100%;
+    overflow: auto;
+    ul {
+      width: 635px;
+    }
+    b {
+      font-size: 14px;
+    }
+    button {
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+  }
+}
